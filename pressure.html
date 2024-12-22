@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قياس الضغط والسكر</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f9f9f9;
+            flex-direction: column;
+            height: 100vh; /* استخدام ارتفاع كامل للصفحة */
+            overflow: hidden;
+        }
+
+        /* شريط العنوان العلوي */
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 15px 0;
+            width: 100%;
+            text-align: center;
+            font-size: 24px;
+            position: fixed; /* تثبيت الشريط العلوي */
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        #pressure {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 50%;
+            margin-top: 80px; /* توفير مسافة لتجنب تداخل مع الشريط العلوي */
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        form div {
+            margin: 20px 0;
+        }
+
+        label {
+            font-size: 18px;
+            color: #555;
+        }
+
+        button, a.button {
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            transition: background-color 0.3s;
+        }
+
+        button:hover, a.button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        قياس الضغط والسكر
+    </header>
+    <section id="pressure">
+        <h2>قياس الضغط والسكر</h2>
+        <form>
+            <div>
+                <label>هل أنت مصاب بالسكري؟</label><br>
+                <a href="diabetes.html" class="button">نعم</a>
+                <a href="diabetes-prevention.html" class="button">لا</a>
+            </div>
+            <div>
+                <label>هل أنت مصاب بضغط الدم؟</label><br>
+                <a href="pressure_yes.html" class="button">نعم</a>
+                <a href="pressure_prevention.html" class="button">لا</a>
+            </div>
+        </form>
+    </section>
+</body>
+</html>

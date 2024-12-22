@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفاصيل منتج</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #007bff;
+            padding: 15px;
+            text-align: center;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        header nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .pharmacy {
+            display: flex; /* استخدام Flexbox */
+            align-items: center; /* محاذاة رأسية للعناصر */
+            justify-content: flex-start; /* ترتيب العناصر أفقياً */
+            margin: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .pharmacy img {
+            max-width: 300px;
+            height: auto;
+            border-radius: 8px;
+            margin-right: 20px; /* مسافة بين الصورة والمعلومات */
+        }
+
+        .pharmacy h1 {
+            margin: 0 0 10px;
+        }
+
+        .pharmacy p {
+            margin: 5px 0;
+        }
+
+        .button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 15px;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        .quantity-section {
+            margin-top: 20px;
+        }
+
+        label {
+            font-size: 18px;
+            margin-right: 10px;
+        }
+
+        select {
+            padding: 8px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            width: 100px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="pharmacy">
+        <img src="m7.jpg" alt="منتج 1">
+        <div class="product-details">
+            <h1>  دعامه معصم</h1>
+            <p>السعر: 45 ر.س</p>
+            <p>الوزن: 0.1 كجم</p>
+            <a href="#" class="button">أضف إلى السلة</a>
+            
+            <!-- قائمة اختيار العدد -->
+            <div class="quantity-section">
+                <label for="quantity">اختر العدد:</label>
+                <select id="quantity">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <button onclick="submitChoice()">تأكيد</button>
+            </div>            
+            <div class="quantity-section">
+                <label for="quantity">اخترالمقاس:</label>
+                <select id="quantity">
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <button onclick="submitChoice()">تأكيد</button>
+            </div>            
+        </div>
+    </section>
+
+    <script>
+        function submitChoice() {
+            // الحصول على العدد المختار من القائمة
+            const selectedQuantity = document.getElementById('quantity').value;
+            alert('لقد اخترت العدد: ' + selectedQuantity);
+        }
+        function submitChoice() {
+            // الحصول على العدد المختار من القائمة
+            const selectedQuantity = document.getElementById('quantity').value;
+            alert('لقد اخترت المقاس: ' + selectedQuantity);
+        }
+    </script>
+
+    <footer>
+        <p>&copy; 2024 Pharmacy. جميع الحقوق محفوظة.</p>
+    </footer>
+
+</body>
+</html>

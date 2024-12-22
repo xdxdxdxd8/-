@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>توصيل الطلبات إلى المنازل</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        form {
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        form input, form button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        form button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="pharmacy.html">بيع الأدوية</a></li>
+                <li><a href="consultations.html">استشارات طبية</a></li>
+                <li><a href="pressure.html">قياس الضغط</a></li>
+                <li><a href="delivery.html">توصيل الطلبات</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="delivery">
+        <h2>توصيل الطلبات إلى المنازل</h2>
+        <p>نقدم خدمة توصيل الأدوية والمنتجات الطبية مباشرة إلى منزلك بكل سهولة.</p>
+        <p>تسوق الآن واحصل على توصيل سريع إلى موقعك.</p>
+
+        <!-- نموذج تعبئة البيانات اللوجستية -->
+        <form action="confirmation2.html" method="get">
+            <label for="street">الشارع:</label>
+            <input type="text" id="street" name="street" placeholder="أدخل اسم الشارع" required>
+
+            <label for="neighborhood">الحي:</label>
+            <input type="text" id="neighborhood" name="neighborhood" placeholder="أدخل اسم الحي" required>
+
+            <label for="city">المدينة:</label>
+            <input type="text" id="city" name="city" placeholder="أدخل اسم المدينة" required>
+
+            <label for="country">الدولة:</label>
+            <input type="text" id="country" name="country" placeholder="أدخل اسم الدولة" required>
+
+            <label for="phone">رقم الهاتف:</label>
+            <input type="tel" id="phone" name="phone" placeholder="أدخل رقم الهاتف" required>
+
+            <label for="notes">ملاحظات إضافية:</label>
+            <textarea id="notes" name="notes" placeholder="أضف أي ملاحظات إضافية" rows="4"></textarea>
+
+            <button type="submit">إرسال الطلب</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 جميع الحقوق محفوظة.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>استشارات طبية مجانية</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        form {
+            max-width: 500px;
+            margin: 20px auto;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        form input, form textarea, form button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        form button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="pharmacy.html">بيع الأدوية</a></li>
+                <li><a href="consultations.html">استشارات طبية</a></li>
+                <li><a href="pressure.html">قياس الضغط</a></li>
+                <li><a href="delivery.html">توصيل الطلبات</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="consultations">
+        <h2>استشارات طبية مجانية</h2>
+        <p>استفد من استشارات طبية مجانية مع متخصصين في مختلف التخصصات الطبية.</p>
+        <p>نحن هنا لتقديم النصائح الطبية لمساعدتك في تحسين صحتك.</p>
+
+        <!-- نموذج تعبئة البيانات -->
+        <form action="confirmation.html" method="get">
+            <label for="height">الطول (بالسنتيمتر):</label>
+            <input type="number" id="height" name="height" placeholder="أدخل الطول" required>
+
+            <label for="weight">الوزن (بالكيلوجرام):</label>
+            <input type="number" id="weight" name="weight" placeholder="أدخل الوزن" required>
+
+            <label for="age">العمر:</label>
+            <input type="number" id="age" name="age" placeholder="أدخل العمر" required>
+
+            <label for="condition">الحالة المرضية:</label>
+            <textarea id="condition" name="condition" placeholder="صف حالتك المرضية" rows="4"></textarea>
+
+            <button type="submit">إرسال الاستشارة</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 جميع الحقوق محفوظة.</p>
+    </footer>
+</body>
+</html>
